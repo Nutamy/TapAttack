@@ -24,10 +24,5 @@ public class Enemy : Warrior
             yield return waitForSeconds;
             AttackAnimated?.Invoke();
         }
-        if(!IsAlive && _target.IsAlive)
-        {
-            yield return waitForRestart;
-            
-        }
     }
 }
